@@ -35,7 +35,7 @@ OutputDataSet=pd.DataFrame(remainedWords)
 '
 	,@input_data_1 = @sqlQuery
 
-	--DELETE FROM #TT WHERE SUBSTRING([Txt],1,1)=CHAR(13);(�h�ť�)
+	--DELETE FROM #TT WHERE SUBSTRING([Txt],1,1)=CHAR(13);(¥hªÅ¥Õ)
 	SET @result=( SELECT [Txt] AS [Keywords],COUNT(*) AS Cnt
 	FROM #TT
 	GROUP BY [Txt]
