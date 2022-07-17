@@ -1,11 +1,11 @@
 
 
---ª¦ÂÎ¶×¤J¸ê®ÆÄæ¦ì[id],[title],[date],[content]
+--çˆ¬èŸ²åŒ¯å…¥è³‡æ–™æ¬„ä½[id],[title],[date],[content]
 
---¥h±¼id(Åı­«½Æ¸ê®Æ¯B²{)
+--å»æ‰id(è®“é‡è¤‡è³‡æ–™æµ®ç¾)
 ALTER TABLE [dbo].[VOGUETEST1] DROP COLUMN [id]
 
---¿ï¥X­«½Æ¸ê®Æ(Á×§K¤H¬°¿ù»~)
+--é¸å‡ºé‡è¤‡è³‡æ–™(é¿å…äººç‚ºéŒ¯èª¤)
 SELECT [title], [date], [content]
 INTO [dbo].[repeated_title_table]
 FROM [dbo].[VOGUETEST1]
@@ -19,7 +19,7 @@ INSERT INTO [dbo].[VOGUETEST1] SELECT * FROM [dbo].[repeated_title_table]
 
 
 
---¿ï¥X­«½Ætitle(vogue·~°t¤å¼ĞÃD¤@¼Ë)
+--é¸å‡ºé‡è¤‡title(vogueæ¥­é…æ–‡æ¨™é¡Œä¸€æ¨£)
 SELECT title
 --INTO [dbo].[repeated_content_table1]
 FROM [dbo].[VOGUETEST1]
